@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>iai-togo</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="footerStyle.css">
+
+</head>
+
+<body>
+  <!-- preloader start -->
+  <div class="preloader">
+    <img src="images/preloader.gif" alt="preloader">
+  </div>
+  <!-- preloader end -->
+
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  <div class="top-header py-2 bg-white">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-4 text-center text-lg-left">
+         <!-- <a class="text-color mr-3" href="callto:+443003030266"><strong>CALL</strong> +44 300 303 0266</a>
+          <ul class="list-inline d-inline">
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-8 text-center text-lg-right">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">notice</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">research</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">SCHOLARSHIP</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a></li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.jpeg" alt="logo"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item @@about">
+              <a class="nav-link" href="#communique">Communiqué</a>
+            </li>
+            <li class="nav-item @@courses">
+              <a class="nav-link" href="inscription.php">S'inscrire</a>
+            </li>
+            <li class="nav-item @@events">
+              <a class="nav-link" href="events.html">Se connecté</a>
+            </li>
+            <!--<li class="nav-item @@blog">
+              <a class="nav-link" href="blog.html">BLOG</a>
+            </li> 
+            <li class="nav-item dropdown view">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Pages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="teacher.html">Teacher</a>
+                <a class="dropdown-item" href="teacher-single.html">Teacher Single</a>
+                <a class="dropdown-item" href="notice.html">Notice</a>
+                <a class="dropdown-item" href="notice-single.html">Notice Details</a>
+                <a class="dropdown-item" href="research.html">Research</a>
+                <a class="dropdown-item" href="scholarship.html">Scholarship</a>
+                <a class="dropdown-item" href="course-single.html">Course Details</a>
+                <a class="dropdown-item" href="event-single.html">Event Details</a>
+                <a class="dropdown-item" href="blog-single.html">Blog Details</a>
+              </div>
+            </li>-->
+            <li class="nav-item @@contact">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- hero slider -->
+<section class="hero-section overlay bg-cover" data-background="images/banner/IAITOGO.jpg">
+  <div class="container">
+    <div class="hero-slider">
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".1">Institue Africain d'Informatique</h1>
+            <p class="text-muted mb-4" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4">IAI-TOGO
+              En application de la décision du Conseil d’Administration de délocaliser l’IAI, la Représentation du TOGO (IAI-TOGO) a ouvert ses portes le 24 octobre 2002. 
+              L’accord d’établissement entre la République Togolaise et l’Institut Africain d’Informatique a été signée le 12 mai 2006.
+              </p>
+            <a href="information.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Lire la suite</a>
+          </div>
+        </div>
+      </div>
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".1">Institue Africain d'Informatique</h1>
+            <p class="text-muted mb-4" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".4">
+              IAI-TOGO
+              En application de la décision du Conseil d’Administration de délocaliser l’IAI, la Représentation du TOGO (IAI-TOGO) a ouvert ses portes le 24 octobre 2002. 
+              L’accord d’établissement entre la République Togolaise et l’Institut Africain d’Informatique a été signée le 12 mai 2006.
+             </p>
+            <a href="information.html" class="btn btn-primary" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".7">lire la suite</a>
+          </div>
+        </div>
+      </div>
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-white" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">Institue Africain d'Informatique</h1>
+            <p class="text-muted mb-4" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".4">
+              IAI-TOGO
+              En application de la décision du Conseil d’Administration de délocaliser l’IAI, la Représentation du TOGO (IAI-TOGO) a ouvert ses portes le 24 octobre 2002. 
+              L’accord d’établissement entre la République Togolaise et l’Institut Africain d’Informatique a été signée le 12 mai 2006.
+              </p>
+            <a href="information.html" class="btn btn-primary" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="zoomIn" data-delay-in=".7">lire la suite </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /hero slider -->
+
+<!-- banner-feature 
+<section class="bg-gray overflow-md-hidden">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+      <div class="col-xl-4 col-lg-5 align-self-end">
+        <img class="img-fluid w-100" src="images/banner/banner-feature.png" alt="banner-feature">
+      </div>
+      <div class="col-xl-8 col-lg-7">
+        <div class="row feature-blocks bg-gray justify-content-between">
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-book mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">Scholorship News</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. Ut enim ad</p>
+          </div>
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-blackboard mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">Our Notice Board</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. Ut enim ad</p>
+          </div>
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-agenda mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">Our Achievements</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. Ut enim ad</p>
+          </div>
+          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
+            <i class="ti-write mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">Admission Now</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. Ut enim ad</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-- /banner-feature -->
+
+<!-- about us -->
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1">
+        <h2 class="section-title"id="communique">CONCOURS D'ENTREE A L'IAI-TOGO</h2>
+        <p>Le Ministre de la Planification du Développement porte à la connaissance du public qu’il est ouvert chaque année un concours d’entrée en 1ère année du Cycle « Ingénieur des Travaux Informatiques (Licence Professionnelle) » options Génie Logiciel (GL), Systèmes et Réseaux (SR) de l’Institut Africain d’Informatique, Représentation du Togo (IAI-TOGO). </p>
+        <p>Le concours se déroulera dans les centres d’écrit suivants :<br>
+        Centre National d’Etudes et de Traitements Informatiques (CENETI) à Lomé,
+        Lycée de Kara 1 (Kara) à Lama Kara (Préfecture de la Kozah).</p>
+        <p>
+          Le concours comportera les épreuves écrites suivantes :
+
+          Pour les deux (2) options:<br>
+
+          Techniques d’expression française, durée 2 heures, coefficient 2,<br>
+          Anglais, durée 2 heures, coefficient 3,<br>
+          Mathématiques, durée 4 heures, coefficient 6,<br>
+          Les dossiers de candidature sont à déposer dans les centres d'écrit au plus tard le jeudi 30 septembre 2021 à 17 heures la date du concours est prevue sur le mardi 05 octobre 2021 à 07 heures 00.
+        </p>
+
+        <a href="inscription.php" class="btn btn-primary-outline">S'inscrire au concours</a>
+      </div>
+      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+        <img class="img-fluid w-100" src="images/about/iai-togo.png" alt="about image">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about us -->
+
+<!-- courses -->
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center section-title justify-content-between">
+          <h2 class="mb-0 text-nowrap mr-3">Les formation de l'IAI-TOGO</h2>
+          <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+          <div>
+            <!--<a href="courses.html" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">see all</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- course list -->
+<div class="row justify-content-center">
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/gl.jpg" alt="course thumb">
+      <div class="card-body">
+        <!--<ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+          <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+        </ul>-->
+        <a href="course-single.html">
+          <h4 class="card-title">Genie Logiciel</h4>
+        </a>
+        <p class="card-text mb-4"> 
+
+          La filière Génie Logiciel forme des informaticiens capables de concevoir et de maintenir des logiciels en s’appuyant sur des méthodes et des outils très évolués. les principaux acquis après une formation en Génie Logiciel sont la maîtrise des systèmes d’information, des outils d’analyse et de modélisation, de programmation dans les langages de pointe ainsi que l’administration des bases de données. A cet effet, l’IAI-TOGO met à la disposition de ses étudiants des centres de calcul équipés de micro-ordinateurs le tout dans un réseau local pour le partage des ressources. La formation est théorique et pratique renforcée par des stages d’entreprise. </p>
+        <!--<a href="information1.html" class="btn btn-primary btn-sm">Lire plus</a>-->
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/sr.jpg" alt="course thumb">
+      <div class="card-body">
+        <!--<ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+          <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+        </ul>-->
+        <a href="course-single.html">
+          <h4 class="card-title">sytème réseaux</h4>
+        </a>
+        <p class="card-text mb-4">La filière Systèmes et Réseaux, créée il y a deux ans forme des informaticiens capables de concevoir, implanter, interconnecter et administrer des réseaux informatiques et d’assurer également la maintenance de tout matériel informatique. L’accent est donc mis sur l’étude des réseaux sous la norme CISCO CCNA, les systèmes d’exploitation, l’électricité, l’électronique et la maintenance.</p>
+        <p class="card-text mb-4">A cet effet, l’IAI-TOGO met à la disposition de ses étudiants des salles de réseaux équipées de micro-ordinateurs le tout dans un réseau local pour le partage des ressources.
+        La formation est très pratique. La première promotion de sept (7) étudiants ont reçu leur diplôme en 2010.</p>
+        <!--<a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>-->
+      </div>
+    </div>
+  </div>
+  <!-- course item -->
+  <div class="col-lg-4 col-sm-6 mb-5">
+    <div class="card p-0 border-primary rounded-0 hover-shadow">
+      <img class="card-img-top rounded-0" src="images/courses/mtwi.jpg" alt="course thumb">
+      <div class="card-body">
+        <!--<ul class="list-inline mb-2">
+          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+          <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+        </ul>-->
+        <a href="course-single.html">
+          <h4 class="card-title">Multimédia</h4>
+        </a>
+        <p class="card-text mb-4"> La licence Multimédia, Technologie Web et Infographie (M-TWI), vise à apporter aux étudiants les compétences nécessaires pour réussir leur projet, qu’il soit de création, d’administration ou d’industrialisation des produits de communication audiovisuelle.
+        L’identité de la formation est liée à la nature pluridisciplinaire des enseignements (connaissance technologiques, informatique, gestion de projet, création audiovisuelle, infographie) et à l’opportunité d’affirmer une bonne communication via des documents multimédias. Il s’agit aussi d’intégrer une culture de management de projets multimédia et infographie. </p>
+        
+       <!-- <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>-->
+      </div>
+    </div>
+  </div>
+ 
+
+<footer>
+  <h2 id="contact">CONTACT</h2>
+  <table>
+    <tr> 
+      <td>59 rue de la kozah Nyékonakpoè</td>
+      <td>   07 BP:12456 Lomé 07,Togo</td>
+    </tr>
+    <tr> 
+      <td>iaitogo@iai-togo.tg</td>
+      <td>(00228) 22 20 47 00</td>
+    </tr>
+
+    
+  </table>
+  <marquee>Copyright &copy; FD Technologie 2021 - All Right Reserved</marquee>
+</footer>
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- filter -->
+<script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
